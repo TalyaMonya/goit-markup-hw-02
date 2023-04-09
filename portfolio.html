@@ -7,33 +7,39 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="body">
+
+  <body class="page">
     <!-- Header -->
-    <header>
-      <nav>
-        <a href="./index.html" class="logo">Web<span class="logo-secondary">Studio</span></a>
-        <ul class="site-nav list">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo link" href="./index.html"
+          >Web<span class="logo-text-dark">Studio</span></a
+        >
+        <ul class="nav-list list">
+          <li><a class="nav-item link" href="./index.html">Studio</a></li>
           <li>
-            <a class="site-nav-link" href="./index.html">Studio</a>
+            <a class="nav-item link" href="./portfolio.html">Portfolio</a>
           </li>
-          <li>
-            <a class="site-nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="site-nav-link" href="">Contacts</a>
-          </li>
+          <li><a class="nav-item link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <address>
-        <ul class="list">
+      <address class="address">
+        <ul class="address-list list">
           <li>
-            <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="address-item link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="address-item link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </address>
@@ -41,17 +47,20 @@
 
     <!-- Main content -->
     <main>
-      <ul class="list">
-        <li><button class="btn-filter" type="button">All</button></li>
-        <li><button class="btn-filter" type="button">Web Site</button></li>
-        <li><button class="btn-filter" type="button">App</button></li>
-        <li><button class="btn-filter" type="button">Design</button></li>
-        <li><button class="btn-filter" type="button">Marketing</button></li>
-      </ul>
-      <!-- Our projects -->
-      <section>
+      <section class="filter">
         <h1 hidden>Portfolio</h1>
-        <ul class="portfolio-list list">
+        <ul class="filter-list list">
+          <li><button class="filter-button" type="button">All</button></li>
+          <li><button class="filter-button" type="button">Web Site</button></li>
+          <li><button class="filter-button" type="button">App</button></li>
+          <li><button class="filter-button" type="button">Design</button></li>
+          <li>
+            <button class="filter-button" type="button">Marketing</button>
+          </li>
+        </ul>
+      </section>
+      <section class="project">
+        <ul class="project-list list">
           <li>
             <img
               src="./images/portfolio/ProjectCard1.jpg"
@@ -59,8 +68,8 @@
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Banking App Interface Concept</h2>
-            <p class="portfolio-list-type">App</p>
+            <h2 class="project-title">Banking App Interface Concept</h2>
+            <p class="project-item">App</p>
           </li>
           <li>
             <img
@@ -69,8 +78,8 @@
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Cashless Payment</h2>
-            <p class="portfolio-list-type">Marketing</p>
+            <h2 class="project-title">Cashless Payment</h2>
+            <p class="project-item">Marketing</p>
           </li>
           <li>
             <img
@@ -79,8 +88,8 @@
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Meditation App</h2>
-            <p class="portfolio-list-type">App</p>
+            <h2 class="project-title">Meditation App</h2>
+            <p class="project-item">App</p>
           </li>
           <li>
             <img
@@ -89,8 +98,8 @@
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Taxi Service</h2>
-            <p class="portfolio-list-type">Marketing</p>
+            <h2 class="project-title">Taxi Service</h2>
+            <p class="project-item">Marketing</p>
           </li>
           <li>
             <img
@@ -99,8 +108,8 @@
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Screen Illustrations</h2>
-            <p class="portfolio-list-type">Design</p>
+            <h2 class="project-title">Screen Illustrations</h2>
+            <p class="project-item">Design</p>
           </li>
           <li>
             <img
@@ -109,18 +118,18 @@
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Online Courses</h2>
-            <p class="portfolio-list-type">Marketing</p>
+            <h2 class="project-title">Online Courses</h2>
+            <p class="project-item">Marketing</p>
           </li>
           <li>
             <img
               src="./images/portfolio/ProjectCard7.jpg"
-              alt="Instagram Stories Concept"
+              alt="Instagram Stories"
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Instagram Stories Concept</h2>
-            <p class="portfolio-list-type">Design</p>
+            <h2 class="project-title">Instagram Stories Concept</h2>
+            <p class="project-item">Design</p>
           </li>
           <li>
             <img
@@ -129,18 +138,18 @@
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Organic Food</h2>
-            <p class="portfolio-list-type">Web Site</p>
+            <h2 class="project-title">Organic Food</h2>
+            <p class="project-item">Web Site</p>
           </li>
           <li>
             <img
               src="./images/portfolio/ProjectCard9.jpg"
-              alt=""
+              alt="Fresh Coffee"
               width="360"
               height="300"
             />
-            <h2 class="portfolio-list-name">Fresh Coffee</h2>
-            <p class="portfolio-list-type">Web Site</p>
+            <h2 class="project-title">Fresh Coffee</h2>
+            <p class="project-item">Web Site</p>
           </li>
         </ul>
       </section>
@@ -148,11 +157,12 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        >Web<span class="logo-footer">Studio</span></a>
+      <a class="logo link" href="./index.html"
+        >Web<span class="logo-text-light">Studio</span></a
+      >
       <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
+        marketing &#38; growth solutions.
       </p>
     </footer>
   </body>

@@ -1,24 +1,15 @@
 :root {
-    --primary-color: #2E2F42; 
+    --primary-color: #2e2f42;
     --secondary-color: #434455;
-    --accent-color: #404BBF;
-    --primary-brand-color: #4D5AE5;
-    --secondary-brand-color:#F4F4FD;
-    --white-color: #FFFFFF;
+    --accent-color: #404bbf;
+    --primary-brand-color: #4d5ae5;
+    --secondary-brand-color: #f4f4fd;
+    --white-color: #ffffff;
 }
 
-/* цвет основного текста #2E2F42 */ 
-/* вторичный цвет текста #434455 */
-/* цвет первой части лого #4D5AE5 */
-/* белый #FFFFFF */
-/* Акцент #404BBF */
-/* вторичный цвет фона #F4F4FD */
-
-
-/* Основные стили для Body */
-.body {
+/* ======= Common styles ======= */
+.page {
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-color);
     background-color: var(--white-color);
 }
 
@@ -26,31 +17,52 @@
     list-style: none;
 }
 
-/* Logo */
+.link {
+    text-decoration: none;
+}
+
+.primary-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+.secondary-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+/* ========= Logo ========= */
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     display: flex;
+    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-brand-color);
-    text-decoration: none;
+
+    color: #4d5ae5;
 }
 
-.logo-secondary {
+.logo-text-dark {
     color: var(--primary-color);
 }
 
-.logo-footer {
-    color: var(--white-color);
+.logo-text-light {
+    color: var(--secondary-brand-color);
 }
 
-/* Navigation */
+/* ========= Navigation ========= */
 
-.site-nav-link {
-    text-decoration: none;
+.nav-item {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -58,27 +70,26 @@
     color: var(--primary-color);
 }
 
-/* Address */
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--accent-color);
+}
 
-.address-link {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+.address-item {
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--secondary-color);
+    color: #434455;
 }
 
-.site-nav-link:hover,
-.address-link:hover,
-.site-nav-link:focus,
-.address-link:focus
- {
-    color: var(--accent-color)
-} 
+.address-item:hover,
+.address-item:focus {
+    color: var(--accent-color);
+}
 
-/* Hero section */
+/* ========= HERO ========= */
+
 .hero {
     background-color: var(--primary-color);
 }
@@ -87,19 +98,21 @@
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .hero-btn {
-    color:var(--white-color);
-    background-color: var(--primary-brand-color);
-    cursor: pointer;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    display: flex;
+    align-items: center;
     letter-spacing: 0.04em;
+    color: var(--white-color);
+    background-color: var(--primary-brand-color);
+    cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -107,81 +120,74 @@
     background-color: var(--accent-color);
 }
 
-/* Sections */
+/* ========= Section 1 ========= */
 
-.sextion-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-
-}
-
-.section-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
-.section-feature-text {
+.advantages-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
     color: var(--secondary-color);
 }
 
+/* ========= Section 2 ========= */
 
-.text-job-title {
+/* ========= Section 3 ========= */
+
+.team-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
     color: var(--secondary-color);
 }
 
-/* Fotter */
+/* ========= Footer ========= */
 
 .footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
     color: var(--secondary-brand-color);
 }
 
-/* PAGE Portfolio */
+/* =========++++ Portfolio ++++========= */
 
-/* Filter buttons */
+/* ========= Filter ========= */
 
-
-.btn-filter {
-   color: var(--primary-brand-color);
-   background-color: var(--white-color);
-   cursor: pointer;
+.filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand-color);
+    background-color: var(--secondary-brand-color);
+    cursor: pointer;
 }
 
-.btn-filter:hover,
-.btn-filter:focus {
+.filter-button:hover,
+.filter-button:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
 
-/* Portfolio */
+/* ========= Projects ========= */
 
-.portfolio-list-name {
+.project-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--primary-color);
 }
 
-.portfolio-list-type {
+.project-item {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
