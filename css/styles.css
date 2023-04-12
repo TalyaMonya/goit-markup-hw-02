@@ -10,7 +10,7 @@
 /* ======= Common styles ======= */
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     background-color: var(--white-color);
 }
 
@@ -26,7 +26,9 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    text-align: center;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: var(--primary-color);
 }
 
@@ -76,8 +78,11 @@ body {
     color: var(--accent-color);
 }
 
+.address {
+font-style: normal;
+}
+
 .address-item {
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -105,6 +110,7 @@ body {
 }
 
 .hero-btn {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -132,6 +138,9 @@ body {
 /* ========= Section 2 ========= */
 
 /* ========= Section 3 ========= */
+.team {
+    background-color: var(--secondary-brand-color);
+}
 
 .team-item {
     font-size: 16px;
@@ -140,10 +149,14 @@ body {
     color: var(--secondary-color);
 }
 
+.team-list {
+    background-color: var(--white-color);
+}
+
 /* ========= Footer ========= */
 
 .footer {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .footer-text {
